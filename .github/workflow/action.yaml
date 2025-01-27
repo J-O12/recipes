@@ -2,7 +2,7 @@ name: Bkend CD
 
 on:
   workflow_dispatch:
-  push:
+  pull_request:
     branches:
       - main
 
