@@ -6,8 +6,12 @@ on:
       - main
 
 jobs:    
-  deploy-to-infra:
+  terraform:
+    name: "Terraform"
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: Terraform
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
@@ -27,7 +31,6 @@ jobs:
 
       - name: Terraform apply
         run: |
-          cd recipe
           terraform init
           terraform apply -auto-approve
 
