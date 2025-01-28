@@ -1,40 +1,40 @@
-variable "key_name" {
-  default = "Learn_tf"
-}
+# variable "key_name" {
+#   default = "Learn_tf"
+# }
 
-variable "instance-type" {
-  default = "t2.micro"
-}
+# variable "instance-type" {
+#   default = "t2.micro"
+# }
 
-variable "image-id" {
-  default = "ami-003f5a76758516d1e"
-}
+# variable "image-id" {
+#   default = "ami-003f5a76758516d1e"
+# }
 
-variable "map_public_ip_on_launch" {
-  default = "true"
-}
+# variable "map_public_ip_on_launch" {
+#   default = "true"
+# }
 
 
-variable "role" {
-  default = "EC2RoleForDynamoDBAccess"
-}
+# variable "role" {
+#   default = "EC2RoleForDynamoDBAccess"
+# }
 
-variable "GitRepoURL" {
-  description = "URL of the Git repository to clone"
-  default     = "https://github.com/PacktPublishing/AWS-Cloud-Projects.git"
-}
+# variable "GitRepoURL" {
+#   description = "URL of the Git repository to clone"
+#   default     = "https://github.com/PacktPublishing/AWS-Cloud-Projects.git"
+# }
 
-variable "RecipesTableName" {
-  description = "Name of the DynamoDB table for recipes"
-  default     = "recipes"
-}
+# variable "RecipesTableName" {
+#   description = "Name of the DynamoDB table for recipes"
+#   default     = "recipes"
+# }
 
-variable "stack_name" {
-  default     = "recipe"
-  description = "The name of the stack"
-  type        = string
-}
+# variable "stack_name" {
+#   default     = "recipe"
+#   description = "The name of the stack"
+#   type        = string
+# }
 
-variable "certificate-arn" {
-  default = "arn:aws:acm:us-east-1:351575047322:certificate/149eadc1-b3b5-4398-9de0-9d3eec68c61b"
-}
+# variable "certificate-arn" {
+#   default = "arn:aws:acm:us-east-1:351575047322:certificate/149eadc1-b3b5-4398-9de0-9d3eec68c61b"
+# }
