@@ -80,7 +80,7 @@ resource "aws_autoscaling_policy" "asg_policy" {
 }
 
 resource "aws_iam_instance_profile" "asg_profile" {
-  name = "asg_profile"
+  name = "asg-profile"
   #   role = var.role
   role = aws_iam_role.recipe-role.name
 }
