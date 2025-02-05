@@ -1,4 +1,4 @@
-name: My backend CI
+name: recipes bckend
 
 on:
   workflow_dispatch:
