@@ -1,8 +1,8 @@
-name: Bckend CD
+name: My backend CI
 
 on:
   workflow_dispatch:
-  push:
+  pull_request:
     branches:
       - main
 
@@ -26,9 +26,10 @@ jobs:
           aws-region: ${{ secrets.AWS_REGION }}
           aws-account-id: ${{ secrets.AWS_ACCOUNT_ID }}
 
-      - name: Terraform apply
+      - name: Terraform plan
         run: |
           cd Terraform
           terraform init
-          terraform apply --auto-approve
+          terraform plan
           
+
