@@ -6,7 +6,7 @@ set -e  # Exit immediately if a command exits with a non-zero status
 ASG_HOOK_NAME="foobar"
 ASG_GROUP_NAME="asg"
 AWS_REGION="ap-southeast-2"
-LOG_FILE="/var/log/cloud-init"
+LOG_FILE="/var/log/cloud-init.log"
 INSTANCE_ID=$(cloud-init query -f "{{ds.meta_data.instance_id}}")
 
 function open_port_80 {
