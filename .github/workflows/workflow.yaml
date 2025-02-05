@@ -1,4 +1,4 @@
-name: Bckend CD
+name: Recipes Backend
 
 on:
   workflow_dispatch:
